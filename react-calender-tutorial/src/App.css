@@ -1,3 +1,21 @@
 .App {
 	text-align: center;
 }
+body{
+	background-color: #FDFDFA;
+	font-family:lato;
+}
+h1,h2{
+	color:black;
+}
+.react-datepicker {
+font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+font-size: 0.8rem;
+background-color: #FDFDFA;
+border: 1px solid #aeaeae;
+border-radius: 0.3rem;
+display: inline-block;
+position: relative;
+
+}
+

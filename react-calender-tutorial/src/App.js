@@ -49,17 +49,17 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Calendar</h1>
-            <h2>Add New Event</h2>
+            <h1>Get Organised</h1>
+            <h2>Add New Events To Organise Your Life</h2>
             <div>
-                <input type="text" placeholder="Add Title" style={{ width: "20%", marginRight: "10px" }} value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })} />
-                <DatePicker placeholderText="Start Date" style={{ marginRight: "10px" }} selected={newEvent.start} onChange={(start) => setNewEvent({ ...newEvent, start })} />
+                <input type="text" placeholder="Add Title" style={{ width: "20%", marginRight: "20px" }} value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })} />
+                <DatePicker placeholderText="Start Date" style={{ marginRight: "10px", color: "yellow" }} selected={newEvent.start} onChange={(start) => setNewEvent({ ...newEvent, start })} />
                 <DatePicker placeholderText="End Date" selected={newEvent.end} onChange={(end) => setNewEvent({ ...newEvent, end })} />
                 <button stlye={{ marginTop: "10px" }} onClick={handleAddEvent}>
                     Add Event
                 </button>
             </div>
-            <Calendar localizer={localizer} events={allEvents} startAccessor="start" endAccessor="end" style={{ height: 500, margin: "50px" }} />
+            <Calendar localizer={localizer} events={allEvents} startAccessor="start" endAccessor="end" style={{ height: 500, margin: "50px", marginTop: '200px' }} />
         </div>
     );
 }
